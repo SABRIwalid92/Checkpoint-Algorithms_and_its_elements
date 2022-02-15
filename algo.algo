@@ -4,6 +4,7 @@ statement: STRING
 words, vowels : INTEGER
 BEGIN
 words=0;
+vowels=0;
         statement = input('Please enter your statement: ')
         FOR i FROM 0 TO length(statement) max  DO
                IF (statement[i]<>".") THEN
