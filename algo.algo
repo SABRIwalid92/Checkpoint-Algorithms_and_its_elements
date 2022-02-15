@@ -1,0 +1,22 @@
+ALGORITHM algorithm_name
+VAR
+statement: STRING
+words, vowels : INTEGER
+BEGIN
+words=0;
+        statement = input('Please enter your statement: ')
+        FOR i FROM 0 TO length(statement) max  DO
+               IF (statement[i]<>".") THEN
+
+               IF (statement[i]=" ") THEN
+  words+=1;
+               END_IF 
+                IF (statement[i]="a" | statement[i]="e" | statement[i]="i" | statement[i]="o" | statement[i]="y"  ) THEN
+  vowels+=1;
+               END_IF 
+  
+               END_IF 
+        END_FOR
+        write('the statement length: ',length(statement),'\n.The number of words in the statement: ',words,'\n.The number of vowels in the statement: ',vowels)
+
+END
